@@ -41,8 +41,3 @@ adicionar.addEventListener("click", (e) => {
   e.preventDefault();
   iniciaPopup("popId");
 });
-
-const recarrega = document.getElementById("refresh");
-recarrega.addEventListener("click", () => {
-  location.reload();
-});
