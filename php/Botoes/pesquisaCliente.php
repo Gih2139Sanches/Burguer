@@ -48,7 +48,7 @@
     <form class="form" method="POST" action="pesquisaCliente.php">
       <div class="pesquisa">
         <label class="item-pesquisa space" for="nome">Nome:</label>
-        <input class="item-pesquisa" type="text" id="nome" name="nome" maxlength="40" placeholder="digite aqui o nome....">
+        <input class="item-pesquisa" type="text" id="nome" name="nome" maxlength="40" placeholder="digite aqui....">
         <button type="submit" class="botao col-2 item-pesquisa" name="botao">Pesquisar</button>
       </div>
     </form>

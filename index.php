@@ -23,15 +23,13 @@
          <a href="#home">home</a>
          <a href="#menu">menu</a>
          <a href="#about">Sobre</a>
-         <span class="space"></span>
+         <span class="space"><a href="#home" class="logo"><img src="images/logo.png"></a></span>
          <a href="./php/CadastroCliente.php">Cad.Cliente</a>
          <a href="./php/CadastroProduto.php">Cad.Produto</a>
-         <a href="#"></a>
+         <a href="./php/CadastroFornecedor.php">Cad.Fornec</a>
       </nav>
 
       <a href="#" class="fas fa-shopping-cart icons"></a>
-
-      <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
 
       <form action="" class="search-form">
          <input type="search" name="" placeholder="search here..." id="search-box">

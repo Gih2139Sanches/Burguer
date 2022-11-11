@@ -39,15 +39,12 @@ if (isset($_POST["botao"])) {
       <a href="../index.php">home</a>
       <a href="../index.php#menu">menu</a>
       <a href="../index.php#about">Sobre</a>
-      <span class="space"></span>
-      <a href="CadastroCliente.php">Cad.Cliente</a>
+      <span class="space"><a href="../index.php" class="logo"><img src="../images/logo.png"></a></span>
+      <a href="CadastroFornecedor.php">Cad.Fornec</a>
       <a href="CadastroProduto.php">Cad.Produto</a>
-      <a href="#"></a>
     </nav>
 
     <a href="#"></a>
-
-    <a href="#home" class="logo"><img src="../images/logo.png" alt=""></a>
 
     <form action="" class="search-form">
       <input type="search" name="" placeholder="search here..." id="search-box">

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pesquisa de Produto</title>
+  <title>Pesquisa de Fornecedor</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -42,13 +42,13 @@
   <section class="container-table">
     <div class="heading">
       <img src="../../images/title-img.png" alt="">
-      <h3>Pesquisa de Produto</h3>
+      <h3>Pesquisa de Fornecedor</h3>
     </div>
 
-    <form class="form" method="POST" action="pesquisaProduto.php">
+    <form class="form" method="POST" action="pesquisaFornecedor.php">
       <div class="pesquisa">
-        <label class="item-pesquisa space nome-inteiro-grande" for="nomeProduto">Nome do Produto:</label>
-        <input class="item-pesquisa" type="text" id="nomeProduto" name="nomeProduto" maxlength="40" placeholder="digite aqui....">
+        <label class="item-pesquisa space nome-inteiro-medio" for="nome_fantasia">Nome Fantasia:</label>
+        <input class="item-pesquisa" type="text" id="nome" name="nome_fantasia" maxlength="40" placeholder="digite aqui....">
         <button type="submit" class="botao col-2 item-pesquisa" name="botao">Pesquisar</button>
       </div>
     </form>
@@ -58,10 +58,10 @@
       <?php
       if (isset($_POST["botao"])) {
         require("../ConectaBanco.php");
-        $nomeProduto = htmlentities($_POST["nomeProduto"]);
+        $nome_fantasia = htmlentities($_POST["nome_fantasia"]);
 
         // gravando dados
-        $query = $mysqli->query("select * from produto where nomeProduto like '%$nomeProduto%'");
+        $query = $mysqli->query("select * from fornecedor where nome_fantasia like '%$nome_fantasia%'");
         echo $mysqli->error;
 
         echo "
@@ -69,20 +69,20 @@
 				<thead>
           <tr>
           <th>ID</th>
-          <th>NOME</th>
-          <th>PREÇO</th>
-          <th>TIPO</th>
-          <th>DATA DO PEDIDO</th>
+          <th>CPF/CNPJ</th>
+          <th>IE</th>
+          <th>RAZÃO SOCIAL</th>
+          <th>NOME FANTASIA</th>
           </tr>
         </thead>
 			";
         while ($tabela = $query->fetch_assoc()) {
           echo "
 				<tr><td align='center'>$tabela[id]</td>
-        <td align='center'>$tabela[nomeProduto]</td>
-        <td align='center'>$tabela[preco]</td>
-        <td align='center'>$tabela[tipo]</td>
-        <td align='center'>$tabela[dt_pedido]</td>
+				<td align='center'>$tabela[cpf_cnpj]</td>
+        <td align='center'>$tabela[fornecedor_ie]</td>
+			  <td align='center'>$tabela[razao_social]</td>
+			  <td align='center'>$tabela[nome_fantasia]</td>
 				</tr>
 			";
         }
@@ -90,7 +90,7 @@
       }
       ?>
     </div>
-    <a href='../CadastroProduto.php'><button class="botao col-2" name="botao">Voltar</button></a>
+    <a href='../CadastroFornecedor.php'><button class="botao col-2" name="botao">Voltar</button></a>
 </body>
 
 </html>

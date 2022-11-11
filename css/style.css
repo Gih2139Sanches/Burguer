@@ -130,7 +130,7 @@ section {
 .header .navbar a {
   color: #fff;
   font-size: 2rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .header .navbar a:hover {
@@ -141,19 +141,19 @@ section {
 
 .header .navbar .space {
   display: inline-block;
-  width: 16rem;
+  width: 27rem;
 }
 
 .header .logo {
   position: absolute;
   top: 3rem;
-  left: 48.5%;
+  left: 48%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .header .logo img {
-  width: 15rem;
+  width: 16rem;
 }
 
 .header .search-form {
@@ -272,6 +272,7 @@ p {
   margin: 7px;
   flex-grow: 1;
   margin-bottom: 40px;
+  font-size: 2rem;
 }
 .space {
   margin-right: 25px;
@@ -281,6 +282,10 @@ p {
 input#nome,
 input#nomeProduto {
   width: 700px;
+}
+
+label.item-pesquisa.space {
+  font-size: 2.2rem;
 }
 
 .menu .box-container {
@@ -987,6 +992,10 @@ table > tbody > tr:hover {
   grid-column: span 2;
 }
 
+.text-transform {
+  text-transform: none;
+}
+
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="number"],
@@ -1164,4 +1173,14 @@ table > tbody > tr:hover {
 }
 .btns label:last-child:hover {
   background: #d9210d;
+}
+.nome-inteiro-medio {
+  width: 180px;
+  margin-left: 30px;
+  margin-right: 8px;
+}
+.nome-inteiro-grande {
+  width: 200px;
+  margin-left: 30px;
+  margin-right: 8px;
 }
