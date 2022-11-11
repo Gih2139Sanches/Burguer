@@ -23,15 +23,12 @@
       <a href="../../index.php">home</a>
       <a href="../../index.php#menu">menu</a>
       <a href="../../index.php#about">Sobre</a>
-      <span class="space"></span>
+      <span class="space"><a href="../../index.php" class="logo"><img src="../../images/logo.png"></a></span>
       <a href="../CadastroCliente.php">Cad.Cliente</a>
       <a href="../CadastroProduto.php">Cad.Produto</a>
-      <a href="#"></a>
     </nav>
 
     <a href="#"></a>
-
-    <a href="#home" class="logo"><img src="../../images/logo.png" alt=""></a>
 
     <form action="" class="search-form">
       <input type="search" name="" placeholder="search here..." id="search-box">
@@ -49,7 +46,7 @@
       <div class="pesquisa">
         <label class="item-pesquisa space nome-inteiro-medio" for="nome_fantasia">Nome Fantasia:</label>
         <input class="item-pesquisa" type="text" id="nome" name="nome_fantasia" maxlength="40" placeholder="digite aqui....">
-        <button type="submit" class="botao col-2 item-pesquisa" name="botao">Pesquisar</button>
+        <button type="submit" class="botao col-2 item-pesquisa" name="botao" id="pesquisar" onclick='ativaTabela()'>Pesquisar</button>
       </div>
     </form>
 
@@ -89,6 +86,7 @@
         echo "</table>";
       }
       ?>
+
     </div>
     <a href='../CadastroFornecedor.php'><button class="botao col-2" name="botao">Voltar</button></a>
 </body>

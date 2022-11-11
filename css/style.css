@@ -720,10 +720,15 @@ label.item-pesquisa.space {
   border-radius: 4px;
 }
 
-.table_responsive2 {
-  max-width: 1200px;
+.table_responsive2.table_responsive2-ativa {
   border: 2px solid #eacf4f;
   padding: 15px;
+}
+
+.table_responsive2 {
+  max-width: 1200px;
+  border: none;
+  padding: 0;
   overflow: auto;
   margin: auto;
   border-radius: 4px;

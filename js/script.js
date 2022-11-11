@@ -41,3 +41,17 @@ adicionar.addEventListener("click", (e) => {
   e.preventDefault();
   iniciaPopup("popId");
 });
+
+//desaparecer borda em pesquisar
+function ativaTabela() {
+  const borda = document.querySelector(".table_responsive2");
+  const botaoPesquisar = document.querySelector("#pesquisar");
+
+  if (botaoPesquisar) {
+    borda.classList.remove("table_responsive2-ativa");
+    botaoPesquisar.addEventListener("click", (e) => {
+      borda.classList.add("table_responsive2-ativa");
+      console.log("ativa");
+    });
+  }
+}
