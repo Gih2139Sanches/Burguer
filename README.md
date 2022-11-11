@@ -1,3 +1,23 @@
 # Burguer
 
-#OBS: lembrar de tirar o $sql do ConectaBanco após a rodar a primeira vez
+:construction: Projeto em construção :construction:
+
+# Descrição
+
+<p>Projeto desenvolvido para a disciplina de Linguagem de Programação I, do curso de Ciência da Computação. O Burguer é um site com
+3 tipos de cadastros.</p>
+
+<p>Cadastro de Cliente: Pemite ao cliente informar dados básicos como: nome, telefone, cpf e etc..</p>
+<p>Cadastro de Produto: Pemite que o usuário informe os dados do produto a ser oferecido como: nome, data, tipo.</p>
+<p>Cadastro de Fornecedor: Pemite ao usuário informar as informações para cadastro de algum fornecedor interessado como: IE, nome fantasia, razão social</p>
+
+# 📁 Acesso ao projeto
+
+**Você pode acessar o projeto pelo link do dominio ou baixar o código fonte!**
+
+## ✔ Técnicas e tecnologias utilizadas
+
+- `HTML e CSS`
+- `JavaScript`
+- `PHP`
+- `MySQL`
